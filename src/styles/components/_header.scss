@@ -1,0 +1,95 @@
+////////////////////////////////////////
+// HEADER
+.header {
+  // &__bg {
+  //   background: linear-gradient(to right, var(--color-header-1), var(--color-header-2));
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 7.5rem;
+  //   z-index: -2;
+  // }
+  // &__light_oblique {
+  //   background-color: #233252;
+  //   position: absolute;
+  //   height: 300%;
+  //   z-index: -1;
+  //   left: 18%;
+  //   width: 0;
+  //   transform: rotate(-40deg);
+  //   top: -100px;
+  // }
+  // &__dark_oblique {
+  //   background-color: var(--color-header-oblique-2);
+  //   position: absolute;
+  //   height: 300%;
+  //   z-index: -1;
+  //   left: 27%;
+  //   width: 0;
+  //   transform: rotate(-40deg);
+  //   top: -100px;
+  // }
+  &__left {
+    margin: 0 5rem 0 7.5rem;
+    &__logo {
+      width: 12.5rem;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__mid {
+    padding: 0 2rem;
+    flex: 1;
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      list-style: none;
+      &__item {
+        margin: 0 6rem;
+        a {
+          text-decoration: none;
+          color: inherit;
+          padding: 1rem 0;
+          position: relative;
+          &::after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: var(--color-pacific-blue);
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          &:hover::after { 
+            width: 100%; 
+            left: 0; 
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// MOBILE SCREENS
+@media only screen and (max-width: $bp-smallest) {
+  .header {
+    &__bg {
+      height: 7.5rem;
+    }
+    &__mid {
+      display: none;
+    }
+  }
+}

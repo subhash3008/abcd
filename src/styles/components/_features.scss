@@ -1,0 +1,42 @@
+////////////////////////////////////////
+// FEATURES
+.features {
+  &__content {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    &__left {
+      &__img {
+        width: 37.5rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__right {
+      &__feature {
+        padding: .5rem 0 .5rem 5rem;
+        position: relative;
+        &::before {
+          content: '';
+          background: url('/assets/images/marker.png') no-repeat;
+          width: 3rem;
+          height: 3rem;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          background-size: cover;
+          transform: translateY(-50%);
+        }
+        &__text {
+          font-size: 1.4rem;
+          color: var(--color-grey-dark-3);
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

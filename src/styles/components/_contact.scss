@@ -1,0 +1,61 @@
+////////////////////////////////////////
+// CONTACT
+.contact {
+  &__content {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    &__left {
+      padding: 2rem;
+      &__form {
+        .btn_container {
+          text-align: center;
+          .btn {
+            padding: .75rem 2.5rem;
+            border: 1px solid var(--color-grey-light-1);
+            background: var(--color-pacific-blue);
+            border-radius: .5rem;
+            color: var(--color-grey-light-1);
+            transition: all .3s ease-in-out;
+            &:hover {
+              background: var(--color-grey-light-1);
+              color: var(--color-pacific-blue);
+              border: 1px solid var(--color-pacific-blue);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    &__right {
+      &__list {
+        padding: 1rem;
+        &__item {
+          padding: 0.5rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          &__icon {
+            margin-right: 1rem;
+            color: var(--color-grey-dark-3);
+          }
+          &__content {
+            &__heading {
+              font-size: 1.6rem;
+              font-weight: 400;
+              color: var(--color-grey-dark-2);
+              a {
+                color: inherit;
+              }
+            }
+            &__text {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

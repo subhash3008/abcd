@@ -1,0 +1,17 @@
+////////////////////////////////////////
+// NEWSLETTER
+.newsletter {
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__input {
+      width: 60%;
+
+      .form_control {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

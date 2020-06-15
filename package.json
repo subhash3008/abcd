@@ -1,0 +1,50 @@
+{
+  "name": "landing-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --env.NODE_ENV=dev",
+    "build": "webpack --mode production --env.NODE_ENV=prod",
+    "start": "webpack-dev-server --open --env.NODE_ENV=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NesticoHQ/landing-v1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NesticoHQ/landing-v1/issues"
+  },
+  "homepage": "https://github.com/NesticoHQ/landing-v1#readme",
+  "devDependencies": {
+    "@babel/preset-env": "7.10.2",
+    "autoprefixer": "9.8.0",
+    "@babel/core": "7.10.2",
+    "babel-core": "6.26.3",
+    "babel-loader": "8.1.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "copy-webpack-plugin": "6.0.2",
+    "css-loader": "3.5.3",
+    "cssnano": "4.1.10",
+    "file-loader": "6.0.0",
+    "html-webpack-plugin": "4.3.0",
+    "node-sass": "4.14.1",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "8.0.2",
+    "style-loader": "1.2.1",
+    "uglifyjs-webpack-plugin": "2.2.0",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "fractional": "1.0.0",
+    "toastedjs": "0.0.2",
+    "uniqid": "4.1.1"
+  }
+}
