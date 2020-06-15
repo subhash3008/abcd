@@ -1,8 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   entry: ['babel-polyfill', './src/js/index.js'],
@@ -15,7 +15,6 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new uglifyJsPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/index.html'
@@ -64,5 +63,8 @@ module.exports = {
         ],
       }
     ]
-  }
+  },
+  optimization: {
+    minimizer: [new TerserPlugin()],
+  },
 };
