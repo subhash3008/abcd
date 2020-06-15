@@ -46,5 +46,8 @@
     "fractional": "1.0.0",
     "toastedjs": "0.0.2",
     "uniqid": "4.1.1"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
