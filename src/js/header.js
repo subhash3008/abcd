@@ -1,11 +1,7 @@
 import elements from './elements';
 
-const scrollToTop = () => {
-  window.scrollTo(0, 0);
-}
-
 export const linkLogoToHome = () => {
-  if (elements.headerLogo) {
-    elements.headerLogo.addEventListener('click', scrollToTop);
+  if (elements.companyLogo) {
+    [...elements.companyLogo].forEach(e => e.addEventListener('click', () => window.scrollTo(0, 0)));
   }
 }

@@ -39,9 +39,8 @@ const requestContact = async (form) => {
 }
 
 const submitForm = async (e) => {
-  console.log(e);
   e.preventDefault();
-  if (elements.contactForm.email && elements.contactForm.message) {
+  if (elements.contactForm.fullName && elements.contactForm.email && elements.contactForm.message) {
     const form = {
       fullName: elements.contactForm.fullName.value,
       email: elements.contactForm.email.value,
@@ -75,12 +74,10 @@ const submitForm = async (e) => {
       }
     }
   }
-
 }
 
 const validateForm = (formObj) => {
   const error = {};
-  console.log(formObj);
   if (!formObj.fullName) {
     error['fullName'] = 'Name is required';
   }
@@ -93,7 +90,6 @@ const validateForm = (formObj) => {
   if (!formObj.message) {
     error['message'] = 'Message is required';
   }
-  console.log('rror:', error);
   return !Object.keys(error).length ? null : error;
 }
 

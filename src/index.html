@@ -37,7 +37,7 @@
       <!-- Header Start -->
       <header class="header">
         <div class="header__left">
-          <div class="header__left__logo js-header-logo">
+          <div class="header__left__logo js-company-logo">
             <img src="/assets/images/nestico-logo.png" alt="app logo" />
           </div>
         </div>
@@ -241,7 +241,12 @@
           </div>
           <div class="newsletter__form">
             <div class="form_group newsletter__form__input">
+              <input type="input" name="fullName" class="form_control js-newsletter-fullName" placeholder="John Doe" autocomplete="off">
+              <div class="form_error js-newsletter-fullName-error"></div>
+            </div>
+            <div class="form_group newsletter__form__input">
               <input type="email" name="email" class="form_control js-newsletter-email" placeholder="abc@xyz.com" autocomplete="off">
+              <div class="form_error js-newsletter-email-error"></div>
             </div>
             <div class="btn_container">
               <button class="btn js-newsletter-btn">Subscribe</button>
@@ -254,7 +259,7 @@
       <!-- Footer Start-->
       <footer class="footer">
         <div class="footer__left">
-          <div class="footer__left__img">
+          <div class="footer__left__img js-company-logo">
             <img src="/assets/images/nestico-logo.png" alt="Company logo">
           </div>
           <div class="footer__left__text">

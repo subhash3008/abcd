@@ -7,10 +7,22 @@
     justify-content: space-around;
 
     &__input {
-      width: 60%;
-
+      width: 33%;
       .form_control {
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// MOBILE SCREENS
+@media only screen and (max-width: $bp-smallest) {
+  .newsletter {
+    &__form {
+      flex-flow: column nowrap;
+      &__input {
+        margin: 1rem auto;
+        width: 80%;
       }
     }
   }

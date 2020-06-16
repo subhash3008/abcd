@@ -46,7 +46,7 @@
 }
 
 .contact {
-  padding: 13rem 8rem 15rem;
+  padding: 13rem 8rem 16rem;
   margin-top: 3rem;
   background: var(--color-grey-light-1);
   clip-path: polygon(0 23%, 100% 0, 100% 100%, 0 77%);
@@ -87,10 +87,25 @@
   }
 
   .features {
-    padding: 2rem 3rem;
+    padding: 4rem 3rem;
+    margin-top: unset;
+    clip-path: unset;
+    background: unset;
+  }
+
+  .contact {
+    padding: 0 3rem 1rem;
+    clip-path: unset;
+    background: unset;
+    margin-top: unset;
+  }
+
+  .newsletter {
+    padding: 2rem 3rem 5rem
   }
 
   .footer {
-    padding: 0;
+    padding: 10rem 3rem 2.6rem;
+    background-size: cover;
   }
 }
