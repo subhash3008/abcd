@@ -43,7 +43,7 @@
     "terser-webpack-plugin": "3.0.4"
   },
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "1.6.0",
     "fractional": "1.0.0",
     "toastedjs": "0.0.2",
     "uniqid": "4.1.1"
